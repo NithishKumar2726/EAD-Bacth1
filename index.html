@@ -1,33 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Professional Animated Login Form</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT V Semester Timetable</title>
+  <link rel="stylesheet" href="style.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap');
+</style>
+  
 </head>
 <body>
-  <div class="login-container">
-    <form id="loginForm" class="login-form">
-     <h2 class="title"><i class="fas fa-sign-in-alt"></i> Login</h2>
 
-      <div class="input-group">
-        <i class="fas fa-envelope icon"></i>
-        <input type="text" id="email" required placeholder=" " />
-        <label for="email">Email</label>
-      </div>
+  <h1 class="nit">Class Timetable - BE V Semester (IT-1)</h1>
 
-      <div class="input-group">
-        <i class="fas fa-lock icon"></i>
-        <input type="password" id="password" required placeholder=" " />
-        <label for="password">Password</label>
-      </div>
+  <table>
+    <tr>
+      <th>Day / Time</th>
+      <th>I</th>
+      <th>II</th>
+      <th>III</th>
+      <th class="lunch">LUNCH</th>
+      <th>IV</th>
+      <th>V</th>
+      <th>VI</th>
+    </tr>
+    <tr>
+      <th>Monday</th>
+      <td>EAD</td>
+      <td>SE</td>
+      <td>ML</td>
+      <td rowspan="6" class="lunch">LUNCH BREAK</td>
+      <td>PE-2</td>
+      <td>EAD Lab (B1)<br>CN Lab (B2)</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <th>Tuesday</th>
+      <td>SE</td>
+      <td>EAD</td>
+      <td>ML Lab (B2)<br>CT Lab (B1)</td>
+      <td>PE-2</td>
+      <td>EAD Lab (B2)<br>CN Lab (B1)</td>
+      <td>FLAT</td>
+    </tr>
+    <tr>
+      <th>Wednesday</th>
+      <td>PE-2</td>
+      <td>EAD Lab (B1)<br>CN Lab (B2)</td>
+      <td>ML</td>
+      <td>EAD</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <th>Thursday</th>
+      <td>FLAT</td>
+      <td>—</td>
+      <td>ML</td>
+      <td>SE</td>
+      <td>CC Lab (B1)</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <th>Friday</th>
+      <td>CN</td>
+      <td>ML Lab (B1)<br>CT Lab (B2)</td>
+      <td>PE-2</td>
+      <td>FLAT</td>
+      <td>SE</td>
+      <td>CC Lab (B2)</td>
+    </tr>
+    <tr>
+      <th>Saturday</th>
+      <td colspan="6">MENTORING / LIBRARY / SPORTS</td>
+    </tr>
+  </table>
 
-      <button type="submit" class="btn">Login</button>
-    </form>
-  </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
